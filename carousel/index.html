@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        .caro-sli{
+            width: 100%;
+            height: auto;    
+            overflow: hidden;
+        }
+
+        .slides-sli{
+            display: flex;
+            width: 100%;
+            height: auto;
+        }
+
+        .slides-sli img{
+            width: 100%;
+            image-rendering: auto;
+        }
+
+        .manual-btn-sli{
+            border: 2px solid #000000;
+            padding: 5px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 1s;
+        }
+
+        .manual-btn-sli:hover{
+            background: #000000;
+        }
+
+        .navigation-manual-sli{
+            width: 100%;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .manual-btn-sli:not(:last-child){
+            margin-right: 40px;
+        }
+
+        .radio-sli input{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="caro-sli">
+            <div class="slides-sli">
+                    <img src="Happy new year (1).png" alt="" srcset="" id="last" class="first-sli">
+                    <img src="Happy new year.png" alt="">
+                    <img src="Happy new year (2).png" alt="">
+                    <img src="Happy new year (1).png" alt="">
+                    <img src="Happy new year.png" alt="" id="first">
+            </div>
+    </div>
+
+    <div class="radio-sli">
+        <input type="radio" name="" id="radio1">
+        <input type="radio" name="" id="radio2">
+        <input type="radio" name="" id="radio3">
+    </div>
+
+        <div class="navigation-manual-sli">
+            <label for="radio1" class="manual-btn-sli"></label>
+            <label for="radio2" class="manual-btn-sli"></label>
+            <label for="radio3" class="manual-btn-sli"></label>
+        </div>
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
